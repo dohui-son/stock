@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  stocker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+     - "./:/app/"
